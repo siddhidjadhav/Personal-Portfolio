@@ -1,0 +1,86 @@
+/* experience.css */
+.experience-container {
+    padding: 20px;
+    margin-top: 80px; /* Adjust to account for the header height */
+    background-color: #f9f9f9; /* Light background */
+    min-height: 100vh; /* Make sure the content fills the screen */
+}
+
+h1 {
+    color: #660033;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #f0dbe6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #660033;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(235, 219, 229, 0.9); /* Match the header background with the h1 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    position: relative; /* For positioning the dot relative to the logo */
+}
+
+.header .logo img {
+    width: 40px; /* Adjust size for the logo */
+    height: auto;
+    margin-right: 5px; /* Reduced space between logo and dot */
+}
+
+.header .logo .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(223, 44, 148);
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute; /* Position the dot absolutely within the logo container */
+    right: -5px; /* Adjust this value to position the dot closer to the logo */
+    top: 50%; /* Center the dot vertically relative to the logo */
+    transform: translateY(-50%); /* Adjust vertical position to align better */
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 20px; /* Reduced spacing between navigation links */
+    margin-right: 90px; /* Add margin to push links closer to the left */
+}
+
+.header .nav-links a {
+    color: #660033; /* Match the text color with header */
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size for navigation links */
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: #cc0066; /* Change color on hover */
+}

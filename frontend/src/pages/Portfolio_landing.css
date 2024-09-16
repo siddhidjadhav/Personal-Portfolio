@@ -1,0 +1,193 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(235, 219, 229, 0.9); /* Match the header background with the h1 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    position: relative; /* For positioning the dot relative to the logo */
+}
+
+.header .logo img {
+    width: 40px; /* Adjust size for the logo */
+    height: auto;
+    margin-right: 5px; /* Reduced space between logo and dot */
+}
+
+.header .logo .dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(223, 44, 148);
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute; /* Position the dot absolutely within the logo container */
+    right: -5px; /* Adjust this value to position the dot closer to the logo */
+    top: 50%; /* Center the dot vertically relative to the logo */
+    transform: translateY(-50%); /* Adjust vertical position to align better */
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 20px; /* Reduced spacing between navigation links */
+    margin-right: 90px; /* Add margin to push links closer to the left */
+}
+
+.header .nav-links a {
+    color: #660033; /* Match the text color with header */
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size for navigation links */
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: #cc0066; /* Change color on hover */
+}
+
+/* Adjust the landing page content to account for fixed header */
+.landing {
+    padding-top: 60px; /* Add top padding to prevent overlap with header */
+    position: relative; /* For positioning the image */
+}
+
+/* Position the image at the bottom center of the webpage */
+.landing-image {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom edge of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center image horizontally */
+    width: 480px; /* Adjust width to reduce image size */
+    height: 600px; /* Maintain aspect ratio */
+    left: 1200px;
+}
+
+/* Paragraph styling */
+.landing-paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Text color for readability */
+    padding: 20px; /* Add 20px padding on all sides */
+    margin: 20px 0; /* Margin to keep equal distance from the surrounding content */
+    background-color: #f0dbe6; /* Optional: Add background color to see the padding effect */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+/* Small Div Styling */
+.small-div {
+    width: 300px;
+    height: 200px;
+    background-color: #f0dbe6; /* You can choose any background color */
+    position: absolute; /* To position it relative to the page */
+    left: 90px; /* Adjust this value to position it towards the left side */
+    top: 200px; /* Adjust this to ensure proper positioning below the h1 tag */
+    padding: 5px; /* Padding to create space inside the div */
+    margin: 20px 0; /* Margin to keep equal distance from the surrounding content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1414; /* Text color for readability */
+    font-size: 1rem; /* Adjust font size */
+    text-align: center;
+}
+
+.middle-div {
+    width: 450px;
+    height: 450px;
+    background-color: #f0dbe6; /* Background color */
+    position: absolute; /* To position it relative to the page */
+    left: 450px; /* Adjust this value to position it towards the left side */
+    top: 200px; /* Adjust this to ensure proper positioning below the h1 tag */
+    padding: 20px; /* Padding to create 20px space inside the div */
+    margin: 20px 0; /* Margin to keep equal distance from the surrounding content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1414; /* Text color for readability */
+    font-size: 1rem; /* Adjust font size */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}  
+
+/* Second Div Styling */
+.second-div {
+    width: 300px; /* Width of the div */
+    height: 220px; /* Height of the div */
+    background-color: #f0dbe6; /* Background color */
+    position: absolute; /* Position relative to the page */
+    left: 90px; /* Space from the left edge */
+    top: 470px; /* Position below the h1 tag */
+    padding: 5px; /* Padding inside the div */
+    margin: 20px 0; /* Margin to keep distance from surrounding content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    color: #1a1414; /* Text color */
+    font-size: 1rem; /* Font size */
+    text-align: center; /* Center text */
+}
+
+/* Link Button Styling */
+.link-button {
+    display: flex;
+    align-items: center;
+    background-color: #e4a4d5; /* Background color of the button */
+    border: 1px solid #e6b2b2; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 130px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    margin-bottom: 10px; /* Space between buttons */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 12px; /* Font size of the button text */
+    padding: 10px; /* Padding inside the button */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+.button-icon {
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.link-button:hover {
+    background-color: #d185ab; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* Spacing adjustment */
+.spacing-left {
+    margin-left: 80px; /* 80px spacing from the left */
+}
+
+/* Adjusting small div styling */
+.small-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes the button to the bottom */
+    padding-bottom: 20px; /* Adds bottom padding */
+}
+
+.small-div p {
+    margin-bottom: 20px; /* Space between the paragraph and the button */
+}
+
+/* Heading styling with 50px left margin */
+h1 {
+    position: relative; /* Enable positioning */
+    left:0px; /* Set the heading 50px from the left */
+    color: #660033; /* Text color for the heading */
+    font-size: 2rem; /* Adjust font size */
+    font-family: 'Arial', sans-serif; /* Set a font family */
+}
