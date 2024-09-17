@@ -1,9 +1,9 @@
-/* experience.css */
+/* General styling for the experience section */
 .experience-container {
     padding: 20px;
-    margin-top: 80px; /* Adjust to account for the header height */
+    margin-top: 100px; /* Adjust to account for the header height */
     background-color: #f9f9f9; /* Light background */
-    min-height: 100vh; /* Make sure the content fills the screen */
+    min-height: 100vh; /* Ensure the content fills the screen */
 }
 
 h1 {
@@ -21,16 +21,49 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 1.5rem;
-    color: #660033;
+/* Styling for company logo and company name */
+.company-info {
+    display: flex;
+    align-items: center; /* Aligns logo and text horizontally */
+    margin-bottom: 10px; /* Space between company info and description */
 }
 
+.company-icon {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 15px; /* Space between logo and company name */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #5f27b9;
+    margin: 0; /* Remove margin to align better with logo */
+}
+
+/* Specific colors for Persistent Systems */
+.persistent {
+    color: #190e2b;
+}
+
+.systems {
+    color: #e4712f;
+}
+
+/* Job title styling */
+.job-title {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px; /* Small gap between company name and job title */
+}
+
+/* Text styling for the job description */
 p {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
 }
+
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
@@ -45,6 +78,7 @@ p {
     z-index: 1000; /* Ensure the header stays on top */
 }
 
+/* Logo styling in the header */
 .header .logo {
     display: flex;
     align-items: center;
@@ -57,6 +91,7 @@ p {
     margin-right: 5px; /* Reduced space between logo and dot */
 }
 
+/* Red dot next to the logo */
 .header .logo .dot {
     width: 10px;
     height: 10px;
@@ -68,6 +103,7 @@ p {
     transform: translateY(-50%); /* Adjust vertical position to align better */
 }
 
+/* Navigation links */
 .header .nav-links {
     display: flex;
     gap: 20px; /* Reduced spacing between navigation links */

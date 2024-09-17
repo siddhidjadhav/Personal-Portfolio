@@ -18,7 +18,7 @@ const Landing = () => {
                     <span className="dot"></span> {/* Red dot */}
                 </div>
                 <nav className="nav-links">
-                    <Link to="./About me">About me</Link>
+                    <Link to="./Me">About me</Link>
                     <Link to="/Experience">Experience</Link>
                     <Link to="/Projects">Projects</Link>
                 </nav>
@@ -27,7 +27,7 @@ const Landing = () => {
             {/* Landing Page Content */}
             <div className="landing">
                 <div>
-                    <h1 className="spacing-left">Siddhi Dilip Jadhav | Full Stack Developer</h1>
+                    <h1>Siddhi Dilip Jadhav | Full Stack Developer</h1>
                     <p className="spacing-left">Crafting dynamic websites and applications</p>
                     {/* Small Div */}
                     <div className="small-div">
