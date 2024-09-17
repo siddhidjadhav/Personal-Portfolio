@@ -34,10 +34,10 @@ const Landing = () => {
                       <h3>Let's work together.</h3> <p> Please reach out via email — it's the most effective way to connect!</p>
                        <button 
                             className="link-button" 
-                            onClick={() => window.open('https://www.linkedin.com/in/your-linkedin', '_blank', 'noopener,noreferrer')}
+                            onClick={() => window.open('mailto:siddhidilipjadhav2000@gmail.com')}
                         >
                             <img src={emailLogo} alt="LinkedIn" className="button-icon" />
-                            LinkedIn
+                            Email
                         </button>
                     </div>
                     <div className="middle-div">
@@ -53,21 +53,21 @@ const Landing = () => {
                         <div className="button-container">
                             <button 
                                 className="link-button" 
-                                onClick={() => window.open('https://github.com/your-github', '_blank', 'noopener,noreferrer')}
+                                onClick={() => window.open('https://github.com/siddhidjadhav', '_blank', 'noopener,noreferrer')}
                             >
                                 <img src={githubLogo} alt="GitHub" className="button-icon" />
                                 Github
                             </button>
                             <button 
                                 className="link-button" 
-                                onClick={() => window.open('mailto:your-email@example.com')}
+                                onClick={() => window.open('https://github.com/siddhidjadhav', '_blank', 'noopener,noreferrer')}
                             >
                                 <img src={resumeLogo} alt="Email" className="button-icon" />
                                 Resume
                             </button>
                             <button 
                                 className="link-button" 
-                                onClick={() => window.open('https://www.linkedin.com/in/your-linkedin', '_blank', 'noopener,noreferrer')}
+                                onClick={() => window.open('https://www.linkedin.com/in/siddhi-jadhav-2402/', '_blank', 'noopener,noreferrer')}
                             >
                                 <img src={linkedinLogo} alt="LinkedIn" className="button-icon" />
                                 LinkedIn
